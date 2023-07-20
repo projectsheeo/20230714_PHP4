@@ -1,4 +1,25 @@
-# 20230714_PHP4
+# 20230721_PHP5 
+
+前回の課題のログイン後のトップページを一部編集し、クラスを追加しました<br><br>
+
+機能：ログイントップページに、ログイン者の名前を記載する。<br><br>
+
+【当初のコード】<br>
+echo 'おかえりなさい、'. $_SESSION["username"].'さん！';<br><br>
+
+【新しいコード】<br>
+class Name { <br>
+    public $name;<br>
+}<br><br>
+
+$greeting = new Name();<br>
+$greeting->name = $_SESSION["username"];<br>
+echo 'おかえりなさい、'. $greeting->name.'さん！';<br>
+
+
+## 以下は0714分のReadme
+
+## 20230714_PHP4
 ログイン・ユーザー管理（今回は必要最低限です！すみません！）
 
 ## 紹介と使い方

@@ -7,7 +7,15 @@ session_start();
 require_once('funcs.php');
 $pdo = db_connect();
 
-echo 'おかえりなさい、'. $_SESSION["username"].'さん！';
+class Name {
+    public $name;
+}
+
+$greeting = new Name();
+$greeting->name = $_SESSION["username"];
+echo 'おかえりなさい、'. $greeting->name.'さん！';
+
+// echo 'おかえりなさい、'. $_SESSION["username"].'さん！';
 
 // データ表示
 $view = '';
