@@ -10,12 +10,14 @@ echo 'おかえりなさい、'. $_SESSION["username"].'さん！';<br><br>
 【新しいコード】<br>
 class Name { <br>
     public $name;<br>
-}<br><br>
+}<br>
 
 $greeting = new Name();<br>
 $greeting->name = $_SESSION["username"];<br>
 echo 'おかえりなさい、'. $greeting->name.'さん！';<br>
 
+## 今後のタスク
+プロダクトをしっかり設計した後、習った内容を軸にコーディングを始めていきたいと思います。
 
 ## 以下は0714分のReadme
 
